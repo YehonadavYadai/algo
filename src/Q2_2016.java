@@ -25,7 +25,6 @@ public class Q2_2016 {
                 if (value > mat[mid][mid]) high = mid;
                 else low = mid + 1;
 
-
             }
         }
         return -1;
