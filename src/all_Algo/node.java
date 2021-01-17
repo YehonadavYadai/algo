@@ -1,25 +1,26 @@
 package all_Algo;
 
-public class node{
-    char data;
-    int data2;
-   node next;
-   node prev;
+public class node {
+    node next;
+    node prev;
+    char data=' ';
+    int data1=0;
 
+    public node ( ){
+    next=null;
+    }
     public node (int a){
-        data2=a;
-        data=' ';
         next=null;
-        prev=null;
-    }
-
-    public node next(){
-        return this.next;
-    }
-    public node getPrev(){
-        return prev;
+        data1=a;
     }
     public void set(char c){
         this.data=c;
     }
+    public node next(){
+        return next;
+    }
+    public node prev(){
+        return prev;
+    }
+
 }

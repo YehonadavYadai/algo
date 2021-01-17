@@ -1,7 +1,7 @@
 package TEST_2015_A_B;
 
 public class Q3 {
-    Node mat[][];
+    Node_Air mat[][];
     int count = 0;
 
     public Q3() {
@@ -60,29 +60,29 @@ public class Q3 {
 
     }
 
-    public Node[][] initMatOfNodes() { // n = 4
+    public Node_Air[][] initMatOfNodes() { // n = 4
         int n = 4;
-        mat = new Node[n][n];
+        mat = new Node_Air[n][n];
 //the 1-st row
-        mat[0][0] = new Node(1, 3);
-        mat[0][1] = new Node(8, 4);
-        mat[0][2] = new Node(3, 8);
-        mat[0][3] = new Node(0, 4);
+        mat[0][0] = new Node_Air(1, 3);
+        mat[0][1] = new Node_Air(8, 4);
+        mat[0][2] = new Node_Air(3, 8);
+        mat[0][3] = new Node_Air(0, 4);
 //the 2-nd row
-        mat[1][0] = new Node(2, 5);
-        mat[1][1] = new Node(5, 11);
-        mat[1][2] = new Node(3, 1);
-        mat[1][3] = new Node(0, 2);
+        mat[1][0] = new Node_Air(2, 5);
+        mat[1][1] = new Node_Air(5, 11);
+        mat[1][2] = new Node_Air(3, 1);
+        mat[1][3] = new Node_Air(0, 2);
 //the 3-d row
-        mat[2][0] = new Node(4, 10);
-        mat[2][1] = new Node(3, 1);
-        mat[2][2] = new Node(1, 4);
-        mat[2][3] = new Node(0, 8);
+        mat[2][0] = new Node_Air(4, 10);
+        mat[2][1] = new Node_Air(3, 1);
+        mat[2][2] = new Node_Air(1, 4);
+        mat[2][3] = new Node_Air(0, 8);
 //the 4-th row
-        mat[3][0] = new Node(2, 0);
-        mat[3][1] = new Node(3, 0);
-        mat[3][2] = new Node(5, 0);
-        mat[3][3] = new Node(0, 0);
+        mat[3][0] = new Node_Air(2, 0);
+        mat[3][1] = new Node_Air(3, 0);
+        mat[3][2] = new Node_Air(5, 0);
+        mat[3][3] = new Node_Air(0, 0);
         return mat;
 
     }

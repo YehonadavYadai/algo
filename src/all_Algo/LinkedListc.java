@@ -5,22 +5,36 @@ public class LinkedListc
 node head;
 
 
-public LinkedListc(int a){
-    node c=new node(a);
+public LinkedListc(){
+    node c=new node();
     head=c;
-    head.next=c;
-    head.prev=c;
-
+   head.next=c;
+   head.prev=c;
 
 
 }
-public void addnode(int a){
-    node v=new node(a);
-    v.prev=head.prev;
-    v.next=head;
-    v.prev.next=v;
-    head.prev=v;
+public void addnode(){
+    node tail=new node();
+    node old_tail=head.prev;
+    //set head.
+    head.prev=tail;
+    //set new node
+    tail.next=head;
+    tail.prev=old_tail;
+    // set old_tail
+    old_tail.next=tail;
 
+    }
+    public void addnode(int v){
+        node tail=new node(v);
+        node old_tail=head.prev;
+        //set head.
+        head.prev=tail;
+        //set new node
+        tail.next=head;
+        tail.prev=old_tail;
+        // set old_tail
+        old_tail.next=tail;
 
     }
 

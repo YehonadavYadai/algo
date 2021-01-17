@@ -2,9 +2,24 @@ package all_Algo;
 
 public class NodePark {
     int count = 0;
-    LinkedListc l = new LinkedListc(100);
+    LinkedListc l = new LinkedListc();
+
+    node head=null;
     final char v = 'v';
     final char w = 'w';
+
+    
+    public void set_arm(int num){
+        head=new node();
+        node arm=head;
+        for (int i = 0; i < num-1; i++) {
+            arm.next=new node();
+            arm.next.prev=arm;
+            arm=arm.next;
+        }
+        arm.next=l.head;
+    }
+
 
     public int countcars() {
         if (l.head.next==null)
@@ -49,10 +64,11 @@ public class NodePark {
     public static void main(String[] args) {
         //build linked list
         NodePark a = new NodePark();
-        for (int i = 0; i < 10; i++) {
-            a.l.addnode(i);
+        for (int i = 0; i <30; i++) {
+            a.l.addnode();
         }
-        a.l.head.next.next.next.next.set('v');
+        a.set_arm(20);
+
         a.countcars();
 
 

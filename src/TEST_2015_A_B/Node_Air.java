@@ -1,8 +1,8 @@
 package TEST_2015_A_B;
-class Node {
+class Node_Air {
     int x, y, cost;
 
-    public Node(int x, int y) {
+    public Node_Air(int x, int y) {
         this.x = x;
         this.y = y;
         cost = 0;
